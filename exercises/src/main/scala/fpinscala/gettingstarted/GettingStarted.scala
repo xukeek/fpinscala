@@ -62,6 +62,11 @@ object MyModule {
     val msg = "The %s of %d is %d."
     msg.format(name, n, f(n))
   }
+
+  def formatResult2(name: String, n: Int)(f: Int => Int) = {
+    val msg = "The %s of %d is %d."
+    msg.format(name, n, f(n))
+  }
 }
 
 object FormatAbsAndFactorial {
